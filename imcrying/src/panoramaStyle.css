@@ -1,0 +1,25 @@
+.image-container {
+    height: 70vh;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 1.8s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.product-section{
+    height: 800px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: bisque;
+}
+  

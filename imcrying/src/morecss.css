@@ -1,0 +1,27 @@
+.product-intro {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left; /* 确保文字左对齐 */
+}
+
+.full-height {
+    height: 100%;
+}
+
+
+.img-full {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 保持比例并填充容器 */
+}
+
+#musicButton {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
