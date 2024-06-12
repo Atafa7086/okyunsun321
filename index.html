@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- //link// -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+    rel="stylesheet" type="text/css" />
+  <!-- SimpleLightbox plugin CSS-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+
+  
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="./src/panoramaStyle.css">
+  <link rel="stylesheet" href="./src/animated.css">
+  <link rel="stylesheet" href="./src/morecss.css">
+  <link rel="stylesheet" href="./src/jsinfospot.css">
+
+  <head>
+    <!-- 其他標籤 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  
+
+  <title>viewport</title>
+
+</head>
+
+<body class="fade-in">
+
+  <!-- //navbar// -->
+
+  <nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <div class="container px-5 px-lg-5">
+      <a class="navbar-brand" href="./mian.html">首頁</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item me-3">
+            <a class="nav-link active" aria-current="page" href="https://www.god-bene.com.tw/index.php/2019-01-04-02-58-30">關於源順</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="https://www.god-bene.com.tw/index.php/2019-01-04-02-59-42/2019-01-08-02-38-26">觀光油廠介紹</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="https://www.god-bene.com.tw/storenew/">產品介紹及購物</a>
+          </li>
+        </ul>
+        
+        <!-- 音樂控制按鈕 -->
+        <button id="musicButton" class="navbar-btn">Pause Music</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- /header-360container/ -->
+
+  <header>
+    <div class="container-fluid p-0">
+      <div class="image-container"></div>
+    </div>
+  </header>
+
+  <!-- //section1-h2text// -->
+
+  <section>
+    <div class="container">
+      <div class="row" style="height: 10vh;">
+        <div class="col-12 text-center d-flex align-items-center justify-content-center">
+          <div style="text-align: center;">
+            <h2 class="animated-text">歡迎來到主惠源順芝麻觀光油廠</h2>
+            <p class="animated-text m-0">這是一個使用360度全景圖的虛擬展廳，你可以透過滑鼠或手指在場景中移動和環視四周。
+              體驗實際走訪的感受。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 背景音樂 -->
+  <audio id="backgroundMusic" loop>
+    <source src="./sound/sunowarm.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- 音頻元素 -->
+  <audio id="sound" loop>
+    <source src="./sound/什麼是油_中文版.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  
+  
+  <!-- footer -->
+  
+  <footer class="text-center text-lg-start" style="background-color: #FFBE98;">
+    <div class="container p-3">
+      <div class="row">
+        <div class="col-12 text-center p-3" style="font-size: 12px;">
+          <a href="https://facebook.com" target="_blank" class="text-dark me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="text-dark me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="text-dark me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="text-dark me-4">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <div id="Company" class="text-center p-3 pb-0" style="font-size: 12px;">
+            Copyright© 2024 主惠源順芝麻觀光油廠
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- //script// -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./src/js/three.min.js"></script>
+  <script src="./src/js/panolens.min.js"></script>
+  <script src="./src/js/main.js"></script>
+  <script>
+    document.body.classList.add('loaded');
+  </script>
+
+  <!-- music control -->
+  <script src="./src/js/music contorl.js"></script>
+
+</body>
+
+</html>
