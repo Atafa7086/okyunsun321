@@ -96,7 +96,7 @@ infospotElement.className = 'infospot-element';
 infospotElement.innerHTML = `
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wNE6JVsBBwo?si=pQOmhPP-NsGhmhiD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <h3>源順故事</h3>
-  <p>害大家好</p>
+  <p>源順製油：堅守健康信念，品質卓越。</p>
 `;
 // 添加自定義DOM元素到信息點
 infospot.addHoverElement(infospotElement, 200);
