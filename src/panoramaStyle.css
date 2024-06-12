@@ -1,0 +1,38 @@
+.image-container {
+    height: 80vh;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 1.8s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.product-section{
+    height: 800px;
+}
+
+.fullscreen-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+    padding: 10px 20px;
+    background-color: #FFBE98;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .fullscreen-button:hover {
+    background-color: #FFBE98;
+  }
+  
